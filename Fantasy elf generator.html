@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+<title>Fantasy Elf Name Generator</title> 
+<link rel="stylesheet" href="Source/CSS/elf.css"/>
+</head>
+<section>
+
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;<p>close menu</p></a>
+    <a href="#">About Me</a><br>
+    <a href="#">About This Project</a><br>
+    <a href="#">Contact Me</a><br>
+    <a href="Fantasy Name Generator.html">GO BACK</a>
+</div>   
+<!--open sidenav -->
+<span onclick="openNav()"><button id="openNav1"class="openNav">☰</button></span>
+
+<!--web introduction-->
+<div id="main" class="elf_random_generator_page">
+<!--text-->
+<div class="front-text" id="frontText">
+<h1>Welcome to the <u>random</u> Elf name generator,<u>Click the button</u> to start.</h1>
+<h2>What is an Elf?</h2>
+<p>An elf (plural: elves) is a type of humanoid supernatural being in Germanic mythology and folklore (especially North Germanic mythology and folklore). In medieval Germanic-speaking cultures, elves generally seem to have been thought of as beings with magical powers and supernatural beauty, ambivalent towards everyday people and capable of either helping or hindering them.However, the details of these beliefs have varied considerably over time and space and have flourished in both pre-Christian and Christian cultures.
+The word elf is found throughout the Germanic languages and seems originally to have meant 'white being.' However, reconstructing the early concept of an elf depends largely on texts written by Christians, in Old and Middle English, medieval German, and Old Norse. These associate elves variously with the gods of Norse mythology, with causing illness, with magic, and with beauty and seduction.</p>
+</div>
+
+<div class="button">
+<button class="male_button" id="generate_male" type="button">Generate Male Elf Name</button>
+
+<button class="female_button" id="generate_female" type="button">Generate Female Elf Name</button>
+</div><br>
+
+<div class="text_area" id="textArea">
+<textarea hidden></textarea>
+</div><br>
+
+</div>
+</section>
+<script src="Source/Javascript/Elf/elf_male_generator.js"></script>
+<script src="Source/Javascript/Elf/elf_female_generator.js"></script>
+<script src="Source/Javascript/SideNav/sidenav.js"></script>
