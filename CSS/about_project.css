@@ -1,0 +1,120 @@
+html,body,section{
+    height:100%;
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    background-image: url('../Media/PNG\ and\ images/book.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.about_project{
+    position: relative;
+    transition: margin-left .5s;
+    padding: 20px;
+    display: block;
+}
+  
+
+.about_project h1{
+    position: relative;
+    font-size: 50px;
+    text-align: center;
+    font-family: epic;
+    margin-bottom: 50px;
+}
+.about_project h2{
+    position: relative;
+    font-size: 30px;
+    text-align: center;
+    font-family: epic;
+    margin-bottom: 50px;
+}
+
+.about_project p{
+    position: relative;
+    font-size: 30px;
+    text-align: center;
+    font-family: epic;
+    margin-bottom: 50px;
+}
+.about_project li{
+    text-decoration: none;
+    position: relative;
+    font-size: 20px;
+    text-align: center;
+    font-family: epic;
+    margin-bottom: 50px;
+}
+
+.about_project ul{
+    text-decoration: none;
+    position: relative;
+    font-size: 10px;
+    text-align: center;
+    font-family: epic;
+    margin-bottom: 50px;
+    list-style-type: none;
+}
+
+/* The side navigation menu */
+.sidenav {
+    position: fixed;
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+  
+/* The navigation menu links */
+.sidenav a {
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    font-family: epic;
+    transition: 1s;
+}
+
+.sidenav a:hover {
+    font-size: 30px;
+    color: white;
+    display: block;
+    font-family: epic;
+}
+  
+.openNav{
+    cursor: pointer;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    font-size: 50px;
+    font-family: epic;
+    transition: 1s;
+    border-radius: 70%;
+}
+
+.openNav:hover{
+    transform: rotate(90deg);
+    color: white;
+}
+
+.openNav::after{
+    transform: rotate(90deg);
+    color: gray;
+    transition: 1s;
+}
+
+@font-face {
+    font-family: epic;
+    src: url('../Fonts/PerryGothic/PERRYGOT.TTF');
+}
