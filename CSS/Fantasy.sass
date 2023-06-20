@@ -1,64 +1,95 @@
+//sass import from 'colors.sass'
 @use 'Colors' as vars
 
+
+//general html settings
 html
     background-color: vars.$paper
-    border: 5px solid vars.$border
+    border: 8px solid vars.$border
     padding: 0
     margin: 0
-    box-sizing: border-box
-    
+    display: inline-block
+
+//presentation style
+.presentation
+    align-items: center
+    text-align: center
+    padding: 0
+    margin-bottom: 50px
+    font-size: 2.0em
+
+//container for every face
+.races
+
+
+//ordinated list style    
 ol
     list-style-type: none
     align-items: center
     padding: 0
+    display: flex
+    margin-left: 120px
 
-.presentation
-    align-items: center
-    text-align: center
-    width: 100vw
-    height: 25vh
-    padding: 0
-    
-
-
+//race's container
 .elves
     align-items: center
     text-align: center
-    width: 100vw
-    height: 10vh
     padding: 0
-
 
 .dwarf
     align-items: center
     text-align: center
-    width: 100vw
-    height: 10vh
-
     padding: 0
 
 .human
     align-items: center
     text-align: center
-    width: 100vw
-    height: 10vh
-
     padding: 0
 
 .dragon
     align-items: center
     text-align: center
-    width: 100vw
-    height: 10vh
-
     padding: 0
-   
+
+//race name's 
+.raceName
+    font-size: 2.0em
+
+//footer style  
 .contact
     background-color: vars.$footer
-    align-items: center
+    align-items: flex
     text-align: center
     padding: 0
     color: vars.$white
+    height: 20vh
+    font-size: 2.0em
+    margin-top: 85px
 
+//mail and git ink style
 #mail,#git
     color: vars.$white
+    
+//icon's style
+#elfIcon
+    width: 20vw
+    height:35vh
+    margin-bottom: -90px
+
+#dwarfIcon
+    width: 20vw
+    height:35vh
+    margin-bottom: -90px
+
+    
+#humanIcon
+    width: 20vw
+    height:35vh
+    margin-bottom: -90px
+
+    
+#dragonIcon
+    width: 20vw
+    height:35vh
+    margin-bottom: -90px
+

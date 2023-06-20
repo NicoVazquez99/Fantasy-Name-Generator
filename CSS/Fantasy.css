@@ -1,65 +1,90 @@
 html {
   background-color: rgb(232, 218, 189);
-  border: 5px solid rgb(0, 0, 0);
+  border: 6px solid rgb(0, 0, 0);
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  display: inline-block;
+}
+
+.presentation {
+  align-items: center;
+  text-align: center;
+  padding: 0;
+  margin-bottom: 50px;
+  font-size: 2em;
 }
 
 ol {
   list-style-type: none;
   align-items: center;
   padding: 0;
-}
-
-.presentation {
-  align-items: center;
-  text-align: center;
-  width: 100vw;
-  height: 25vh;
-  padding: 0;
+  display: flex;
+  margin-left: 120px;
 }
 
 .elves {
   align-items: center;
   text-align: center;
-  width: 100vw;
-  height: 10vh;
   padding: 0;
 }
 
 .dwarf {
   align-items: center;
   text-align: center;
-  width: 100vw;
-  height: 10vh;
   padding: 0;
 }
 
 .human {
   align-items: center;
   text-align: center;
-  width: 100vw;
-  height: 10vh;
   padding: 0;
 }
 
 .dragon {
   align-items: center;
   text-align: center;
-  width: 100vw;
-  height: 10vh;
   padding: 0;
+}
+
+.raceName {
+  font-size: 2em;
 }
 
 .contact {
   background-color: rgb(53, 54, 68);
-  align-items: center;
+  align-items: flex;
   text-align: center;
   padding: 0;
   color: rgb(250, 250, 250);
+  height: 20vh;
+  font-size: 2em;
+  margin-top: 85px;
 }
 
 #mail, #git {
   color: rgb(250, 250, 250);
+}
+
+#elfIcon {
+  width: 20vw;
+  height: 35vh;
+  margin-bottom: -90px;
+}
+
+#dwarfIcon {
+  width: 20vw;
+  height: 35vh;
+  margin-bottom: -90px;
+}
+
+#humanIcon {
+  width: 20vw;
+  height: 35vh;
+  margin-bottom: -90px;
+}
+
+#dragonIcon {
+  width: 20vw;
+  height: 35vh;
+  margin-bottom: -90px;
 }/*# sourceMappingURL=Fantasy.css.map */
