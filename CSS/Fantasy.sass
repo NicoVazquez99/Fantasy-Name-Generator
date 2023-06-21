@@ -1,9 +1,8 @@
 //sass import from 'colors.sass'
 @use 'Colors' as vars
 
-
-//general html settings
-html
+//general body settings
+body
     background-color: vars.$paper
     border: 8px solid vars.$border
     padding: 0
@@ -17,10 +16,6 @@ html
     padding: 0
     margin-bottom: 50px
     font-size: 2.0em
-
-//container for every face
-.races
-
 
 //ordinated list style    
 ol
@@ -73,23 +68,70 @@ ol
 //icon's style
 #elfIcon
     width: 20vw
-    height:35vh
+    height: 35vh
     margin-bottom: -90px
 
 #dwarfIcon
     width: 20vw
-    height:35vh
+    height: 35vh
     margin-bottom: -90px
 
-    
 #humanIcon
     width: 20vw
-    height:35vh
+    height: 35vh
     margin-bottom: -90px
 
-    
 #dragonIcon
     width: 20vw
-    height:35vh
+    height: 35vh
     margin-bottom: -90px
+
+// Mobile styles
+@media (max-width: 767px)
+    .presentation
+        font-size: 1.5em
+    
+    ol
+        margin-left: 60px
+    
+    .contact
+        font-size: 1.5em
+        margin-top: 50px
+        height: 15vh
+    
+    #elfIcon,
+    #dwarfIcon,
+    #humanIcon,
+    #dragonIcon
+        width: 80vw
+        height: auto
+        margin-bottom: -15vh
+    
+
+// Tablet styles
+@media (min-width: 768px) and (max-width: 1023px)
+    .presentation
+        font-size: 1.8em
+    
+    ol
+        margin-left: 80px
+    
+    .contact
+        font-size: 1.8em
+        margin-top: 70px
+        height: 18vh
+    
+    #elfIcon,
+    #dwarfIcon,
+    #humanIcon,
+    #dragonIcon
+        width: 60vw
+        height: auto
+        margin-bottom: -20vh
+
+// Desktop styles
+@media (min-width: 1024px)
+    body
+        margin: 0 auto
+        max-width: 1200px
 

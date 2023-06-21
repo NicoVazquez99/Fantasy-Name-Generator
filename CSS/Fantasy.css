@@ -1,6 +1,6 @@
-html {
+body {
   background-color: rgb(232, 218, 189);
-  border: 6px solid rgb(0, 0, 0);
+  border: 8px solid rgb(0, 0, 0);
   padding: 0;
   margin: 0;
   display: inline-block;
@@ -87,4 +87,53 @@ ol {
   width: 20vw;
   height: 35vh;
   margin-bottom: -90px;
+}
+
+@media (max-width: 767px) {
+  .presentation {
+    font-size: 1.5em;
+  }
+  ol {
+    margin-left: 60px;
+  }
+  .contact {
+    font-size: 1.5em;
+    margin-top: 50px;
+    height: 15vh;
+  }
+  #elfIcon,
+  #dwarfIcon,
+  #humanIcon,
+  #dragonIcon {
+    width: 80vw;
+    height: auto;
+    margin-bottom: -15vh;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .presentation {
+    font-size: 1.8em;
+  }
+  ol {
+    margin-left: 80px;
+  }
+  .contact {
+    font-size: 1.8em;
+    margin-top: 70px;
+    height: 18vh;
+  }
+  #elfIcon,
+  #dwarfIcon,
+  #humanIcon,
+  #dragonIcon {
+    width: 60vw;
+    height: auto;
+    margin-bottom: -20vh;
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
 }/*# sourceMappingURL=Fantasy.css.map */
