@@ -1,17 +1,16 @@
-body {
+html {
   background-color: rgb(232, 218, 189);
   border: 8px solid rgb(0, 0, 0);
   padding: 0;
   margin: 0;
   display: inline-block;
+  width: 100vw;
+  height: 100vh;
 }
 
-.presentation {
-  align-items: center;
-  text-align: center;
-  padding: 0;
-  margin-bottom: 50px;
-  font-size: 2em;
+body {
+  width: 100vw;
+  height: 100vh;
 }
 
 ol {
@@ -89,38 +88,41 @@ ol {
   margin-bottom: -90px;
 }
 
-@media (max-width: 767px) {
-  .presentation {
-    font-size: 1.5em;
-  }
-  ol {
-    margin-left: 60px;
-  }
-  .contact {
-    font-size: 1.5em;
-    margin-top: 50px;
-    height: 15vh;
-  }
-  #elfIcon,
-  #dwarfIcon,
-  #humanIcon,
-  #dragonIcon {
-    width: 80vw;
-    height: auto;
-    margin-bottom: -15vh;
-  }
+.body {
+  display: flexbox;
+  width: 100vw;
+  height: 100vh;
 }
+
+.presentation {
+  text-align: center;
+  font-size: 1.9em;
+}
+
+h2 {
+  margin-top: -19px;
+  margin-right: 20px;
+}
+
+.races {
+  align-content: center;
+  text-align: center;
+}
+
 @media (min-width: 768px) and (max-width: 1023px) {
+  body {
+    display: block;
+  }
   .presentation {
     font-size: 1.8em;
   }
   ol {
-    margin-left: 80px;
+    margin-left: 40px;
   }
   .contact {
     font-size: 1.8em;
     margin-top: 70px;
-    height: 18vh;
+    height: auto;
   }
   #elfIcon,
   #dwarfIcon,
@@ -128,12 +130,6 @@ ol {
   #dragonIcon {
     width: 60vw;
     height: auto;
-    margin-bottom: -20vh;
-  }
-}
-@media (min-width: 1024px) {
-  body {
-    margin: 0 auto;
-    max-width: 1200px;
+    margin-bottom: 10px;
   }
 }/*# sourceMappingURL=Fantasy.css.map */
