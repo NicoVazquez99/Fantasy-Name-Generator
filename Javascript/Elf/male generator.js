@@ -18,9 +18,13 @@ document.addEventListener("DOMContentLoaded", function() {
         var maleName2 = ["Aearonian", "Agaraen", "Agarher", "Agarvran", "Aire", "Airendil", "Amamion", "Amdirthor", "Amathal", "Amather", "Amathuilos", "Amatheldir", "Amlugol", "Aessereg", "Aupwe", "Calear", "Caranagar", "Cemno", "Duindaer", "Duirro", "Eilianther", "Gaer", "Galadher", "Gollor", "Gulduron", "Guldur", "Guldurion", "Hithaerben", "Holiilo", "Ingolmondur", "Lar", "Leucandil", "Lanthir", "Loeg", "Lo", "Lumorndaer", "Morguldir", "Morgulon", "Naur", "Neithaor", "Nullion", "Olchanar", "Othanar", "Olerydon", "Ranchon", "Rimdor", "Rodor", "Roher", "Rhovanion", "Ruina", "Russarocco", "Sir", "Sirdhemion", "Tawaren", "Tawarenion", "Tawarher", "Tordil", "Uirchanar", "Urendur", "Urucher", "Yr"];
 
         var Names = Array.from({ length: 5 }, function () {
-            var forename = maleName1[getRandomInt(0, maleName1.length)];
-            var surname = maleName2[getRandomInt(0, maleName2.length)];
-            return capFirst(forename) + " " + capFirst(surname);
+            var forename1 = maleName1[getRandomInt(0, maleName1.length)];
+            var forename2 = maleName1[getRandomInt(0, maleName1.length)];
+            var surname1 = maleName2[getRandomInt(0, maleName2.length)];
+            var surname2 = maleName2[getRandomInt(0, maleName2.length)];
+
+            var newName = capFirst(forename1.slice(0, forename1.length / 2)) + forename2.slice(forename2.length / 2).toLowerCase() + " " + capFirst(surname1.slice(0, surname1.length / 2)) + surname2.slice(surname2.length / 2).toLowerCase();
+            return newName;
         });
 
         var nameList = document.getElementById("nameList");
@@ -33,3 +37,4 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
+
