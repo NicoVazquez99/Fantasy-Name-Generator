@@ -16,39 +16,23 @@ document.addEventListener("DOMContentLoaded", function() {
       var femaleName1 = ["Amidala", "Aravis", "Arwen", "Arya", "Astoria", "Bellatrix", "Brienne", "Catelyn", "Cersei", "Daenerys", "Elora", "Fleur", "Galadriel", "Gen", "Gilly", "Jadis", "Katniss", "Lavender", "Luna", "Melisandre", "Minerva", "Missandei", "Morla", "Nymphadora", "Nyota", "Olenna", "Ornela", "Osha", "Pansy", "Raziel", "Ripley", "Sansa", "Shae", "Sorsha", "Sybil", "Willow", "Ygritte", "Kinsey"];
       var femaleName2 = ["Amidala", "Aravis", "Arwen", "Arya", "Astoria", "Bellatrix", "Brienne", "Catelyn", "Cersei", "Daenerys", "Elora", "Fleur", "Galadriel", "Gen", "Gilly", "Jadis", "Katniss", "Lavender", "Luna", "Melisandre", "Minerva", "Missandei", "Morla", "Nymphadora", "Nyota", "Olenna", "Ornela", "Osha", "Pansy", "Raziel", "Ripley", "Sansa", "Shae", "Sorsha", "Sybil", "Willow", "Ygritte", "Kinsey"];
   
-      var names = [];
-  
-      while (names.length < 5) {
-        var forename1 = femaleName1[getRandomInt(0, femaleName1.length)];
-        var forename2 = femaleName1[getRandomInt(0, femaleName1.length)];
-        var surname1 = femaleName2[getRandomInt(0, femaleName2.length)];
-        var surname2 = femaleName2[getRandomInt(0, femaleName2.length)];
-  
-        var firstName = capFirst(forename1.slice(0, Math.floor(forename1.length / 2))) +
-          forename2.slice(Math.floor(forename2.length / 2)).toLowerCase();
-        var lastName = capFirst(surname1.slice(0, Math.floor(surname1.length / 2))) +
-          surname2.slice(Math.floor(surname2.length / 2)).toLowerCase();
-  
-        var fullName = firstName + " " + lastName;
-  
-        if (!names.includes(fullName)) {
-          names.push(fullName);
-        }
-      }
-  
-      // Mezclar el orden de los nombres
-      names.sort(function() {
-        return Math.random() - 0.5;
-      });
-  
-      var nameList = document.getElementById("nameList");
-      nameList.innerHTML = ""; // Clear previous names
-  
-      names.forEach(function(name) {
-        var listItem = document.createElement("li");
-        listItem.textContent = name;
-        nameList.appendChild(listItem);
-      });
-    }
-  });
-  
+      var names = Array.from({ length: 5}, function(){
+        var forename1 = femaleName1[getRandomInt(0, femaleName1.length -1)];
+        var forename2 = femaleName1[getRandomInt(0, femaleName1.length -1)];
+        var surname1 = femaleName2[getRandomInt(0, femaleName2.length -1)];
+        var surname2 = femaleName2[getRandomInt(0, femaleName2.length -1)];
+
+        var fullName = capFirst(forename1.slice(0, forename1.length / 2)) + forename2.slice(forename2.length / 2).toLowerCase() + " " + capFirst(surname1.slice(0, surname1.length / 2)) + surname2.slice(surname2.length / 2).toLocaleLowerCase();
+        return fullName;
+    });
+
+    var nameList = document.getElementById("nameList");
+    nameList.innerHTML=""; //clear previous names
+
+    names.forEach(function(name){
+        var li = document.createElement("li");
+        li.textContent = name;
+        nameList.appendChild(li);
+    })
+}
+})
