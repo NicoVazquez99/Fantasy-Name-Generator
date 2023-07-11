@@ -30,7 +30,50 @@ h1 {
   margin-left: -70px;
 }
 
-#eraser {
+#page-content {
+  transition: margin-top 0.3s ease;
+  margin-top: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav ul li {
+  display: inline-block;
   position: relative;
-  right: 20px;
+}
+nav ul li a {
+  display: block;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  background-color: #1a1a1a;
+}
+nav ul li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 200px;
+  background-color: #555;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  z-index: 1;
+}
+nav ul li ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+nav ul li ul li a:hover {
+  background-color: #3c3c3c;
+}
+nav ul li:hover ul {
+  display: block;
 }/*# sourceMappingURL=Elf.css.map */

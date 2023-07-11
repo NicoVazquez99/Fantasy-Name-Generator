@@ -2,6 +2,12 @@
 @use 'Colors' as color
 @use 'Input' as input
 
+$menuBackgroundColor: #333
+$menuTextColor: #fff
+$submenuBackgroundColor: #555
+$submenuTextColor: #fff
+
+
 body
     align-content: center
     text-align: center
@@ -29,7 +35,53 @@ h1
     align-items: center
     margin-left: -70px
 
-#eraser
-  position: relative
-  
-  right: 20px
+#page-content 
+    transition: margin-top 0.3s ease // smooth transition
+    margin-top: 0 //initial superior margin
+
+
+// nav menu styles
+nav 
+  ul 
+    list-style: none
+    padding: 0
+    margin: 0
+
+    li 
+      display: inline-block
+      position: relative
+
+      a 
+        display: block
+        padding: 10px
+        background-color: $menuBackgroundColor
+        color: $menuTextColor
+        text-decoration: none
+
+        &:hover 
+          background-color: darken($menuBackgroundColor, 10%)
+        
+      ul 
+        display: none
+        position: absolute
+        top: 100%
+        left: 0
+        background-color: $submenuBackgroundColor
+        color: $submenuTextColor
+        padding: 0
+        margin: 0
+        list-style: none
+        z-index: 1
+
+        li 
+          a 
+            display: block
+            padding: 10px
+            text-decoration: none
+
+            &:hover 
+              background-color: darken($submenuBackgroundColor, 10%)
+    
+      &:hover 
+        ul 
+          display: block
