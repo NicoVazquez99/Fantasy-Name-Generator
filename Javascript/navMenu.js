@@ -1,17 +1,19 @@
-document.addEventListener("DOMContentLoaded", function() {
-    var homeButton = document.querySelector("nav > ul > li > a"); // Seleccionar el botón "Home"
-    var submenu = document.querySelector("nav ul.submenu");
-    var pageContent = document.getElementById("page-content");
+document.addEventListener("DOMContentLoaded", function () {
+    const hasSubmenuItems = document.querySelectorAll(".has-submenu");
 
-    homeButton.addEventListener("click", function(event) {
-        event.preventDefault(); // Evitar el comportamiento predeterminado del enlace
+    hasSubmenuItems.forEach(function (item) {
+        item.addEventListener("click", function (event) {
+            event.preventDefault();
+            const submenu = this.querySelector(".submenu");
+            submenu.classList.toggle("open");
+        });
 
-        if (submenu.style.display === "block") {
-            submenu.style.display = "none";
-            pageContent.style.marginTop = "0";
-        } else {
-            submenu.style.display = "block";
-            pageContent.style.marginTop = submenu.offsetHeight + "px";
-        }
+        // Cerrar el submenú cuando el usuario hace clic fuera de él
+        document.addEventListener("click", function (event) {
+            if (!item.contains(event.target)) {
+                const submenu = item.querySelector(".submenu");
+                submenu.classList.remove("open");
+            }
+        });
     });
 });

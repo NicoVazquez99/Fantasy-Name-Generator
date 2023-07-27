@@ -5,9 +5,11 @@ body {
   padding: 0;
   margin: 0;
   display: inline-block;
-  position: fixed;
   width: 100vw;
   height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-bottom: 50px;
 }
 
 h1 {
@@ -28,4 +30,41 @@ h1 {
 .buttons {
   align-items: center;
   margin-left: -70px;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+}
+.menu li {
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
+}
+.menu li a {
+  text-decoration: none;
+  color: #333;
+}
+.menu li a:hover {
+  color: #007bff;
+}
+.menu li.has-submenu .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #f9f9f9;
+  min-width: 150px;
+}
+.menu li.has-submenu .submenu li {
+  display: block;
+  margin: 0;
+}
+.menu li.has-submenu .submenu li a {
+  color: #333;
+}
+.menu li.has-submenu:hover .submenu {
+  display: block;
 }/*# sourceMappingURL=dragon.css.map */

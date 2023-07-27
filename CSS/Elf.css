@@ -5,9 +5,11 @@ body {
   padding: 0;
   margin: 0;
   display: inline-block;
-  position: fixed;
   width: 100vw;
   height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-bottom: 50px;
 }
 
 h1 {
@@ -30,50 +32,39 @@ h1 {
   margin-left: -70px;
 }
 
-#page-content {
-  transition: margin-top 0.3s ease;
-  margin-top: 0;
-}
-
-nav ul {
+.menu {
   list-style: none;
   padding: 0;
-  margin: 0;
 }
-nav ul li {
+.menu li {
   display: inline-block;
+  margin-right: 20px;
   position: relative;
 }
-nav ul li a {
-  display: block;
-  padding: 10px;
-  background-color: #333;
-  color: #fff;
+.menu li a {
   text-decoration: none;
+  color: #333;
 }
-nav ul li a:hover {
-  background-color: #1a1a1a;
+.menu li a:hover {
+  color: #007bff;
 }
-nav ul li ul {
+.menu li.has-submenu .submenu {
   display: none;
   position: absolute;
   top: 100%;
-  left: 1px;
-  background-color: #555;
-  color: #fff;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  z-index: 1;
-}
-nav ul li ul li a {
-  display: block;
+  left: 0;
+  background-color: #f9f9f9;
   padding: 10px;
-  text-decoration: none;
+  border: 1px solid #f9f9f9;
+  min-width: 150px;
 }
-nav ul li ul li a:hover {
-  background-color: #3c3c3c;
+.menu li.has-submenu .submenu li {
+  display: block;
+  margin: 0;
 }
-nav ul li:hover ul {
+.menu li.has-submenu .submenu li a {
+  color: #333;
+}
+.menu li.has-submenu:hover .submenu {
   display: block;
 }/*# sourceMappingURL=Elf.css.map */

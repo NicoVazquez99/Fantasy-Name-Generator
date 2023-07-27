@@ -15,9 +15,12 @@ body
     padding: 0
     margin: 0
     display: inline-block
-    position: fixed
     width: 100vw
     height: 100vh
+    overflow-y: scroll
+    overflow-x: hidden
+    padding-bottom: 50px  
+
 
 h1
     font-size: 4.0em
@@ -35,53 +38,45 @@ h1
     align-items: center
     margin-left: -70px
 
-#page-content 
-    transition: margin-top 0.3s ease // smooth transition
-    margin-top: 0 //initial superior margin
 
-
-// nav menu styles
-nav 
-  ul 
+// menu style
+.menu 
     list-style: none
     padding: 0
-    margin: 0
 
     li 
-      display: inline-block
-      position: relative
+        display: inline-block
+        margin-right: 20px
+        position: relative
 
-      a 
-        display: block
-        padding: 10px
-        background-color: $menuBackgroundColor
-        color: $menuTextColor
-        text-decoration: none
-
-        &:hover 
-          background-color: darken($menuBackgroundColor, 10%)
-        
-      ul 
-        display: none
-        position: absolute
-        top: 100%
-        left: 120px
-        background-color: $submenuBackgroundColor
-        color: $submenuTextColor
-        padding: 0
-        margin: 0
-        list-style: none
-        z-index: 1
-
-        li 
-          a 
-            display: block
-            padding: 10px
+        a 
             text-decoration: none
+            color: color.$letters
 
             &:hover 
-              background-color: darken($submenuBackgroundColor, 10%)
-    
-      &:hover 
-        ul 
-          display: block
+                color: color.$mana
+
+        // submenu style
+        &.has-submenu 
+            .submenu 
+                display: none
+                position: absolute
+                top: 100%
+                left: 0
+                background-color: color.$background
+                padding: 10px
+                border: 1px solid color.$background
+                min-width: 150px
+
+                li 
+                    display: block
+                    margin: 0
+
+                    a 
+                        color: color.$letters
+        
+            &:hover 
+                .submenu 
+                    display: block
+                    
+ 
