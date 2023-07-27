@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=PT+Sans:ital,wght@1,700&display=swap");
 body {
   align-content: center;
   text-align: center;
@@ -10,6 +11,7 @@ body {
   overflow-y: scroll;
   overflow-x: hidden;
   padding-bottom: 50px;
+  font-family: "Cookie", sans-serif;
 }
 
 h1 {
@@ -35,6 +37,7 @@ h1 {
 .menu {
   list-style: none;
   padding: 0;
+  font-size: 30px;
 }
 .menu li {
   display: inline-block;

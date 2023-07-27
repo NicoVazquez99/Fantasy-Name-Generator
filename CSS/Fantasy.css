@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=PT+Sans:ital,wght@1,700&display=swap");
 body {
   align-content: center;
   text-align: center;
@@ -8,14 +9,15 @@ body {
   position: fixed;
   width: 100vw;
   height: 100vh;
+  font-family: "Cookie", sans-serif;
 }
 
 h1 {
-  font-size: 2.8em;
+  font-size: 3em;
 }
 
 h2 {
-  font-size: 2.5em;
+  font-size: 2em;
 }
 
 .races {
@@ -40,6 +42,7 @@ ol {
   height: 20vh;
   font-size: 2em;
   margin-top: 150px;
+  font-size: 50px;
 }
 
 #mail, #git {
