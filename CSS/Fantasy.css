@@ -13,7 +13,7 @@ body {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 3.5em;
 }
 
 h2 {
@@ -50,10 +50,17 @@ ol {
 }
 
 #elfIcon,
-#dwarfIcon,
 #humanIcon,
 #dragonIcon {
   width: 20vw;
   height: 35vh;
   margin-bottom: -90px;
+}
+
+#dwarfIcon {
+  margin-bottom: -90px;
+  width: 15vw;
+  height: 35vh;
+  border-radius: 50%;
+  overflow: hidden;
 }/*# sourceMappingURL=Fantasy.css.map */
