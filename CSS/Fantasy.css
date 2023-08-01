@@ -6,7 +6,8 @@ body {
   padding: 0;
   margin: 0;
   display: inline-block;
-  position: fixed;
+  overflow-x: hidden;
+  overflow-y: scroll;
   width: 100vw;
   height: 100vh;
   font-family: "Cookie", sans-serif;
@@ -17,7 +18,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 .races {
@@ -33,6 +34,7 @@ ol {
 
 .raceName {
   font-size: 2em;
+  margin-top: 79px;
 }
 
 .contact {
@@ -49,18 +51,15 @@ ol {
   color: rgb(250, 250, 250);
 }
 
+#dwarfIcon,
 #elfIcon,
 #humanIcon,
 #dragonIcon {
-  width: 20vw;
-  height: 35vh;
-  margin-bottom: -90px;
-}
-
-#dwarfIcon {
   margin-bottom: -90px;
   width: 15vw;
   height: 35vh;
-  border-radius: 50%;
+  border-radius: 100%;
   overflow: hidden;
+  padding-left: 20px;
+  padding-right: 20px;
 }/*# sourceMappingURL=Fantasy.css.map */

@@ -9,7 +9,8 @@ body
     padding: 0
     margin: 0
     display: inline-block
-    position: fixed
+    overflow-x: hidden
+    overflow-y: scroll
     width: 100vw
     height: 100vh
     font-family: color.$font
@@ -19,7 +20,8 @@ h1
     font-size: 3.5em
 
 h2
-    font-size: 2em
+    font-size: 2.5em    
+    
 
 
 //section style
@@ -35,6 +37,7 @@ ol
 //race name's 
 .raceName
     font-size: 2.0em
+    margin-top: 79px
 
 //footer style  
 .contact
@@ -52,20 +55,18 @@ ol
     
     
 //icon's style
-#elfIcon,
-#humanIcon,
-#dragonIcon
-    width: 20vw
-    height: 35vh
-    margin-bottom: -90px
 
 @mixin rounded-image 
   border-radius: color.$border-radius
   overflow: hidden // Asegura que la imagen no sobresalga del borde redondeado
 
-
-#dwarfIcon
+#dwarfIcon,
+#elfIcon,
+#humanIcon,
+#dragonIcon
     margin-bottom: -90px
     width: 15vw
     height: 35vh
     @include rounded-image 
+    padding-left:20px
+    padding-right: 20px
