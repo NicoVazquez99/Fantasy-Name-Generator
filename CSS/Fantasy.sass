@@ -63,10 +63,55 @@ ol
 #dwarfIcon,
 #elfIcon,
 #humanIcon,
-#dragonIcon
+#dragonIcon 
     margin-bottom: -90px
     width: 15vw
     height: 35vh
     @include rounded-image 
     padding-left:20px
     padding-right: 20px
+.elves a, .dwarf a, .human a, .dragon a
+    text-decoration: none
+    color: inherit
+
+
+.menu 
+    list-style: none
+    padding: 0
+    font-size: 30px
+
+    li 
+        display: inline-block
+        margin-right: 20px
+        position: relative
+
+        a 
+            text-decoration: none
+            color: color.$letters
+
+            &:hover 
+                color: color.$mana
+
+        // submenu style
+        &.has-submenu 
+            .submenu 
+                display: none
+                position: absolute
+                top: 100%
+                left: 0
+                background-color: color.$background
+                padding: 10px
+                border: 1px solid color.$background
+                min-width: 150px
+
+                li 
+                    display: block
+                    margin: 0
+
+                    a 
+                        color: color.$letters
+        
+            &:hover 
+                .submenu 
+                    display: block
+                    
