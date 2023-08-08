@@ -17,6 +17,30 @@ body
     font-family: color.$font
 
 
+@keyframes fadeInOut
+  0%, 100%
+    opacity: 0
+  50%
+    opacity: 1
+
+.ink-container 
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 0
+  pointer-events: none
+
+.splatter, .splatter1, .splatter2, .splatter3, .splatter4, .splatter5, .splatter6, .splatter7
+  position: absolute
+  width: 150px
+  height: 150px
+  max-width: 150px
+  max-height: 150px
+  animation: fadeInOut 4s infinite alternate
+     
+
 h1
     font-size: 4.0em
 
