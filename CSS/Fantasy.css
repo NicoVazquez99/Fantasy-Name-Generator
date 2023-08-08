@@ -2,7 +2,7 @@
 body {
   align-content: center;
   text-align: center;
-  background-color: rgb(232, 218, 189);
+  background-image: url("https://i.imgur.com/ziH6XA6.jpg");
   padding: 0;
   margin: 0;
   display: inline-block;
@@ -42,7 +42,6 @@ body {
 
 h1 {
   font-size: 3.5em;
-  text-shadow: h-shadow v-shadow blur-radius color none initial inherit;
 }
 
 h2 {

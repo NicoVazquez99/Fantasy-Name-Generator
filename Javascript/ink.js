@@ -17,6 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
           splatter.style.opacity = "0";
         });
       }, 1500);
-    }, 4000);
+    }, 4000 ); //time between ".splatter" random movement, 2000 = 2 seconds.
   });
   
