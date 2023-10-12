@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=PT+Sans:ital,wght@1,700&display=swap");
+body {
+  align-content: center;
+  text-align: center;
+  background-image: url("https://i.imgur.com/ziH6XA6.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-bottom: 50px;
+  font-family: "Cookie", sans-serif;
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.ink-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.splatter, .splatter1, .splatter2, .splatter3, .splatter4, .splatter5, .splatter6, .splatter7 {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  max-width: 150px;
+  max-height: 150px;
+  animation: fadeInOut 4s infinite alternate;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+.description {
+  font-size: 2em;
+}
+
+#nameList {
+  list-style: none;
+  align-items: center;
+  margin-right: 105px;
+  font-size: 3em;
+}
+
+.buttons {
+  align-items: center;
+  margin-left: -70px;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  font-size: 30px;
+}
+.menu li {
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
+}
+.menu li a {
+  text-decoration: none;
+  color: #333;
+}
+.menu li a:hover {
+  color: #007bff;
+}
+.menu li.has-submenu .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #f9f9f9;
+  min-width: 150px;
+}
+.menu li.has-submenu .submenu li {
+  display: block;
+  margin: 0;
+}
+.menu li.has-submenu .submenu li a {
+  color: #333;
+}
+.menu li.has-submenu:hover .submenu {
+  display: block;
+}/*# sourceMappingURL=human.css.map */
