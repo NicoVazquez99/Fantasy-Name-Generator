@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=PT+Sans:ital,wght@1,700&display=swap");
+body {
+  align-content: center;
+  text-align: center;
+  background-image: url("../Media/book.jpg");
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Cookie", sans-serif;
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.ink-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.splatter, .splatter1, .splatter2, .splatter3, .splatter4, .splatter5, .splatter6, .splatter7 {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  max-width: 150px;
+  max-height: 150px;
+  animation: fadeInOut 4s infinite alternate;
+}
+
+h1 {
+  font-size: 3.5em;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+.races {
+  text-align: center;
+}
+
+ol {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  justify-content: center;
+}
+
+.raceName {
+  font-size: 2em;
+  margin-top: 79px;
+}
+
+.contact {
+  background-color: rgb(53, 54, 68);
+  align-items: flex;
+  color: rgb(250, 250, 250);
+  height: 20vh;
+  font-size: 2em;
+  margin-top: 150px;
+  font-size: 50px;
+}
+
+#mail, #git {
+  color: rgb(250, 250, 250);
+}
+
+#dwarfIcon,
+#elfIcon,
+#humanIcon,
+#dragonIcon {
+  margin-bottom: -90px;
+  width: 15vw;
+  height: 35vh;
+  padding-left: 20px;
+  padding-right: 20px;
+  filter: sepia(100%);
+  transition: 0.3s ease-in-out;
+}
+
+#dwarfIcon:hover,
+#elfIcon:hover,
+#humanIcon:hover,
+#dragonIcon:hover {
+  filter: sepia(0);
+}
+
+p {
+  padding: 10px;
+}
+
+.elves a, .dwarf a, .human a, .dragon a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  font-size: 30px;
+}
+.menu li {
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
+}
+.menu li a {
+  text-decoration: none;
+  color: #333;
+}
+.menu li a:hover {
+  color: #007bff;
+}
+.menu li.has-submenu .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #f9f9f9;
+  min-width: 150px;
+  z-index: 1;
+}
+.menu li.has-submenu .submenu li {
+  display: block;
+  margin: 0;
+}
+.menu li.has-submenu .submenu li a {
+  color: #333;
+}
+.menu li.has-submenu:hover .submenu {
+  display: block;
+}/*# sourceMappingURL=Fantasy.css.map */
